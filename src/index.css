@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Base Styles */
+:root {
+  --cherry-red: #ed4c4c;
+  --peach: #faa09a;
+  --light-peach: #ffd0cd;
+  --white: #ffffff;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Grandstander', cursive;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.transition-brand {
+  transition: all 300ms ease-in-out;
+}
+
+.bg-cherry-red {
+  background-color: var(--cherry-red);
+}
+
+.text-cherry-red {
+  color: var(--cherry-red);
+}
+
+.bg-peach {
+  background-color: var(--peach);
+}
+
+.bg-light-peach {
+  background-color: var(--light-peach);
+}
+
+/* Common Components */
+.btn-primary {
+  background-color: var(--cherry-red);
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--peach);
+}
+
+.btn-outline {
+  border: 2px solid var(--cherry-red);
+  color: var(--cherry-red);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: var(--cherry-red);
+  color: white;
+}
+
+/* Dark Mode */
+.dark .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.dark .btn-outline:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Section Spacing */
+section {
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 6rem 0;
+  }
+}
