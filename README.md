@@ -123,15 +123,4 @@ Fonts:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Team
 
-- Alex Johnson - Frontend Developer
-- Maya Peterson - AI Specialist
-- Carlos Rodriguez - Azure DevOps
-- Sarah Kim - UX/UI Designer
-
-## 🙏 Acknowledgements
-
-- Azure for providing the platform and services
-- The hackathon organizers
-- All the judges and mentors
